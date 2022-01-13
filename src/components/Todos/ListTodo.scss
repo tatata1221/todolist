@@ -1,0 +1,48 @@
+.list-todo-container{
+  button{
+    cursor: pointer;
+    height: 1.8cm;
+    width: 3cm;
+    font-size: 0.8cm;
+  } 
+  .add-todo{
+    .add{
+      margin: 0 10px;
+    }
+    input{
+      width: 10cm;
+      height: 1.8cm;
+      font-size: 0.8cm;
+    }
+  }
+  .list-todo-content{
+    width: 600px;
+    margin: 0 auto;
+      .todo-child{
+        input{
+          width: 8cm;
+          height: 1cm;
+          font-size: 0.8cm;
+        }
+        &:first-child{
+          margin-top: 50px;
+          border-top: 1px solid white;
+        }
+        height: 1.8cm;
+        font-size: 0.8cm;
+        border-bottom: 1px solid white;
+        justify-content: center;
+        align-items:center;
+        display: flex;
+        }
+        .edit{
+          margin: 0 15px;
+          height: 1.2cm;
+        }
+        .delete{        
+          height: 1.2cm;
+        }
+      }
+} 
+
+
