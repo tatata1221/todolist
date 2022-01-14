@@ -3,6 +3,7 @@ import './App.css';
 import ListTodo from './components/Todos/ListTodo';
 import {ToastContainer, toast} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css'
+import { Signup } from './components/auths/SignUp';
 
 function App() {
   return (
@@ -13,6 +14,9 @@ function App() {
           Hello world ReactJS Mr. NTA (from VNC)
         </p>
         <ListTodo />
+        {/* <div>
+          <Signup />
+        </div> */}
       </header>
         <ToastContainer
           position="top-right"
