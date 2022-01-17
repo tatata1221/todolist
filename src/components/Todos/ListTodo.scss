@@ -1,0 +1,37 @@
+.list-todo-container{
+  &:first-child{
+    margin-top: 5cm;
+  }
+  border: 1px solid black;
+  width:25%;
+  margin: 0 auto;
+  button{
+    cursor: pointer;
+  } 
+  .add-todo{
+    text-align: center;
+    .add{
+      margin: 0 10px;
+    }
+    input{
+      margin-top: 20px;
+    }
+  }
+  .list-todo-content{
+    margin: 0 auto;
+      .todo-child{
+        input{
+          width: 8cm;
+          height: 1cm;
+        }
+        &:first-child{
+          margin-top: 20px;
+          border-top: 1px solid white;
+        }
+        border-bottom: 1px solid white;
+        justify-content: center;
+        align-items:center;
+        display: flex;
+        }
+      }
+} 
