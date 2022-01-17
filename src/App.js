@@ -3,21 +3,32 @@ import './App.css';
 import ListTodo from './components/Todos/ListTodo';
 import {ToastContainer, toast} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css'
-import { Signup } from './components/auths/SignUp';
+import SignUp from './components/auths/SignUp';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Hello world ReactJS Mr. NTA (from VNC)
-        </p>
-        <ListTodo />
-        {/* <div>
-          <Signup />
-        </div> */}
-      </header>
+    <div>
+        
+        <Router>
+        <Switch>
+          <Route path="/signup" exact>
+            <SignUp />
+          </Route>
+          <Route path="/todo" exact>
+            <ListTodo />
+          </Route>
+          {/* <Route path="/singin">
+            <SignIN />
+          </Route> */}
+        </Switch>
+        </Router>
+        
         <ToastContainer
           position="top-right"
           autoClose={5000}
@@ -30,6 +41,7 @@ function App() {
           pauseOnHover
           />
         <ToastContainer />
+
     </div>
   );
 }
