@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import ListTodo from './components/Todos/ListTodo';
 import {ToastContainer, toast} from 'react-toastify';
@@ -10,8 +9,24 @@ import {
   Route,
   Link
 } from "react-router-dom";
+import { getDefaultNormalizer } from '@testing-library/react';
 
 function App() {
+  // const adminUser = {
+  //   email: "admin@gmail.com",
+  //   password: 123456
+  // }
+  // const [user, setUser] = useState({name: "", email: ""});
+  // const [error, setError] = useState("");
+
+  // const Login = details => {
+  //   console.log(details);
+  // };
+
+  // const Logout = () => {
+  //   console.log("logout");
+  // }
+
   return (
     <div>
         
@@ -28,7 +43,7 @@ function App() {
           </Route> */}
         </Switch>
         </Router>
-        
+
         <ToastContainer
           position="top-right"
           autoClose={5000}

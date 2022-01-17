@@ -4,7 +4,7 @@ import { TextField } from './TextField';
 import * as Yup from 'yup';
 import './Signup.scss';
 
-export const Signup = () => {
+const Signup = () => {
   const validate = Yup.object({
   firstName: Yup.string()
     .max(15, '*Must be 15 characters or less')
